@@ -1,23 +1,52 @@
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Щоб правильно враховувати розміри елементів */
 }
 
-[class*="__cont"] {
-    max-width: 1170px;
-    margin: 0 auto;
-
+body, html {
+    height: 100%; /* Висота сторінки 100%, щоб працювало вертикальне центрування */
 }
 
 header {
     color: black;
     width: 100%;
-    height: 710px;
-}
-
-.head__cont {
+    height: 100vh; /* Задаємо висоту header на всю висоту вікна */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Вертикальне центрування */
+    align-items: center; /* Горизонтальне центрування */
     text-align: center;
 }
 
-.head__title {
-    font-family: 'Source Serif Pro', serif;
+.head_title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px; /* Відступ між заголовком і навігацією */
 }
+
+.head_nav {
+    margin-bottom: 20px; /* Відступ між навігацією та зображенням */
+}
+
+.head_nav .nav__link {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.head__Photo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.head__Photo img {
+    width: 100%; /* Ширина зображення адаптується до ширини сторінки */
+    max-width: 1200px; /* Максимальна ширина зображення */
+    height: auto; /* Автоматична зміна висоти відповідно до ширини */
+    display: block;
+    margin: 0 auto;
+}
+
+
+
