@@ -1,52 +1,137 @@
+
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Щоб правильно враховувати розміри елементів */
-}
-
-body, html {
-    height: 100%; /* Висота сторінки 100%, щоб працювало вертикальне центрування */
-}
-
-header {
-    color: black;
-    width: 100%;
-    height: 100vh; /* Задаємо висоту header на всю висоту вікна */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Вертикальне центрування */
-    align-items: center; /* Горизонтальне центрування */
-    text-align: center;
-}
-
-.head_title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 20px; /* Відступ між заголовком і навігацією */
-}
-
-.head_nav {
-    margin-bottom: 20px; /* Відступ між навігацією та зображенням */
-}
-
-.head_nav .nav__link {
-    display: inline-block;
-    margin: 0 15px;
-    text-decoration: none;
-    color: black;
-}
-
-.head__Photo {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.head__Photo img {
-    width: 100%; /* Ширина зображення адаптується до ширини сторінки */
-    max-width: 1200px; /* Максимальна ширина зображення */
-    height: auto; /* Автоматична зміна висоти відповідно до ширини */
-    display: block;
+    box-sizing: border-box; 
+  }
+  
+  [class*="__container"] {
+    max-width: 1170px;
     margin: 0 auto;
 }
+  
+  .head_title {
+    font-family: 'Caveat', cursive;
+    font-size: 36px;
+    margin-right: 20px; 
+    margin-bottom: 40px;
+  }
+  
+  .navigation {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .nav__link {
+    margin: 0 25px;
+    color: #333;
+    text-decoration: none;
+    transition: color .2s linear;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+  }
+  
+  .nav__link:hover {
+    color: #5b50bd;
+  }
+  
+  .head_img {
+    margin: 0 auto;  
+  }
+
+  .black-line {
+    border: none;
+    height: 2px;           
+    background-color: rgb(51, 46, 46); 
+    margin: 15px 0; 
+}
+
+.bio_title {
+  font-family: "Orelega One", serif;
+  font-size: 26px;
+}
+
+.bio_inf {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 19px;
+}
+
+.lp_title {
+  font-family: "Orelega One", serif;
+  font-size: 26px;
+}
+
+.info_lp {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 19px;
+}
+
+.img_title {
+  font-family: "Orelega One", serif;
+  font-size: 26px;
+}
+
+.media_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.awards_title {
+  font-family: "Orelega One", serif;
+  font-size: 26px;
+}
+
+
+table {
+  width: 1170px;
+  height: 300px;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-width: 2px;
+}
+
+.bold_cap {
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+}
+
+td {
+  font-size: 20px;
+}
+
+th {
+  font-size: 20px;
+}
+
+.footer {
+  background-color: transparent;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: auto; /* Дозволяє footer'у завжди залишатися внизу */
+  width: 100%;
+  border: none;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:"Yeseva One", serif;;
+  font-size: 20px;
+  color: #333;
+}
+
+.footer_content span {
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+
+
 
 
 
